@@ -31,7 +31,7 @@ var request = require('request'),
         case 'overcast':
           condition = 'det molnigt';
         break;
-        case 'light rain';
+        case 'light rain':
           condition = 'lätt regn';
         break;
 
