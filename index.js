@@ -23,10 +23,10 @@ var request = require('request'),
           condition = 'solen framme';
         break;
         case 'partly cloudy':
-          condition = 'växlande molnighet.';
+          condition = 'växlande molnighet';
         break;
         case 'mostly cloudy':
-          condition = 'ganska så molnigt ute.';
+          condition = 'ganska så molnigt ute';
         break;
         case 'overcast':
           condition = 'molnigt';
