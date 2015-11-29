@@ -17,19 +17,19 @@ var request = require('request'),
 
       switch (condition) {
         case 'rain':
-          condition = 'regnigt.';
+          condition = 'det regnigt.';
         break;
         case 'clear':
           condition = 'solen framme';
         break;
         case 'partly cloudy':
-          condition = 'växlande molnighet';
+          condition = 'det växlande molnighet';
         break;
         case 'mostly cloudy':
-          condition = 'ganska så molnigt ute';
+          condition = 'det ganska så molnigt ute';
         break;
         case 'overcast':
-          condition = 'molnigt';
+          condition = 'det molnigt';
         break;
 
         default:
