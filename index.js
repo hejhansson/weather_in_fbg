@@ -17,19 +17,19 @@ var request = require('request'),
 
       switch (condition) {
         case 'rain':
-          condition = 'det regnigt.';
+          condition = 'regnar det';
         break;
         case 'clear':
-          condition = 'solen framme';
+          condition = 'är solen framme';
         break;
         case 'partly cloudy':
-          condition = 'det växlande molnighet';
+          condition = 'är det växlande molnighet';
         break;
         case 'mostly cloudy':
-          condition = 'det ganska så molnigt ute';
+          condition = 'är det ganska så molnigt ute';
         break;
         case 'overcast':
-          condition = 'det molnigt';
+          condition = 'är det molnigt';
         break;
         case 'light rain':
           condition = 'regnar det lätt';
@@ -40,7 +40,7 @@ var request = require('request'),
       }
 
       console.log(chalk.magenta.bold('\nVäder i Falkenberg'));
-  		console.log("Det är " + temperature + "°C ute men det känns som " + feelslike + "°C.\nJust nu är " + condition + ' och blåser ' + Math.round(wind_speed_in_meters_per_second) + ' m/s\n');
+  		console.log("Det är " + temperature + "°C ute men det känns som " + feelslike + "°C.\nJust nu " + condition + ' och blåser ' + Math.round(wind_speed_in_meters_per_second) + ' m/s\n');
 
   	} else {
   		console.log("Oops! Detta gick fel. Se till att du är uppkoplad till internet.");
