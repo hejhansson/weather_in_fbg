@@ -32,7 +32,7 @@ var request = require('request'),
           condition = 'det molnigt';
         break;
         case 'light rain':
-          condition = 'lätt regn';
+          condition = 'regnar det lätt';
         break;
 
         default:
