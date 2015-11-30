@@ -1,9 +1,8 @@
 var request = require('request'),
     cheerio = require('cheerio'),
     chalk = require('chalk'),
-    // falkenberg
+    nodemailer = require('nodemailer'),
     url = "http://www.wunderground.com/q/zmw:00000.5.02603";
-
 
 (function() {
   request(url, function (error, response, body) {
@@ -33,6 +32,9 @@ var request = require('request'),
         break;
         case 'light rain':
           condition = 'regnar det lätt';
+        break;
+        case 'scattered clouds':
+          condition = 'är det spridda moln';
         break;
 
         default:
